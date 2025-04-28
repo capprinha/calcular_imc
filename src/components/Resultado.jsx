@@ -21,7 +21,7 @@ function Resultado({ imc, resultado }){
                 Valores de IMC entre 25 e 29.0 apontam sobrepeso. Embora não classificado como obessidade, já manifesta um risco aumentado de doenças cardiovasculares e diabetes.
                 Buscar orientação para redução de peso é prudente. 
             </p> : resultado == ''}
-            {resultado == 'Obessidade grau 1' || 'Obessidade grau 2' || 'Obessidade grau 3' ? <p className={styles.resultadoTexto}>
+            {resultado == 'Obessidade grau 1' || resultado == 'Obessidade grau 2' || resultado == 'Obessidade grau 3' ? <p className={styles.resultadoTexto}>
                 IMC maior que 30 classfica obessidade. Divide-se em 3 graus
                 <ul className={styles.resultadoList}>
                     <li>
