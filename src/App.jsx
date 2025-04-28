@@ -46,7 +46,7 @@ function vericarIMC(){
     else if(imc >= 40.0){
         return 'Obessidade grau 3'
     }else{
-      return ''
+      return 'Numeros invalidos'
     }
 }
 
