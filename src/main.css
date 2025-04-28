@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--corDeFundo);
+    font-family: sans-serif;
+    
+}
+.container{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo{
+    text-align: center;
+    margin: 10px 0px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border: 3px solid var(--corBorda);
+    border-radius: 10px;
+    padding: 30px 0px;
+}
+.formLogo{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.formInput{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid var(--corBorda);
+
+}
+
+:root{
+    --corDeFundo:#ffeaf2;
+    --corBorda:#382f32;
+    --corTexto:#f1396d;
+}
+@media (max-width:424px){
+    .container{
+        width: 80%;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formLogo{
+        margin-bottom: 10px;
+    }
+    .formInput{
+        margin-right: 0px;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+}
