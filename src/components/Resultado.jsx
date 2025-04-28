@@ -12,15 +12,15 @@ function Resultado({ imc, resultado }){
             {resultado == 'Abaixo do peso' ? <p className={styles.resultadoTexto}>
                 Um IMC abaixo de 18.5 indica baixo peso. Essencialmente, pode ser um alerta para desnutrição ou outras condiçõe de saúde.
                 Baixo peso requer avaliação médica, pois afeta o sistema imunológico.
-            </p> : ''}
+            </p> : 'a'}
             {resultado == 'Peso normal' ? <p className={styles.resultadoTexto}>
                 IMC entre 18.5 e 24.5 é considerado normal. Estar nesta faixa de peso sugere um equilíbrio saudável entre peso e altura, diminuindoo risco de doenças.
                 Manter-se nesta categoria envolve dieta equilibrada e atividade fisica.
-            </p> : ''}
+            </p> : 'b'}
             {resultado == 'Sobrepeso' ? <p className={styles.resultadoTexto}>
                 Valores de IMC entre 25 e 29.0 apontam sobrepeso. Embora não classificado como obessidade, já manifesta um risco aumentado de doenças cardiovasculares e diabetes.
                 Buscar orientação para redução de peso é prudente. 
-            </p> : ''}
+            </p> : 'c'}
             {resultado == 'Obessidade grau 1' || 'Obessidade grau 2' || 'Obessidade grau 3' ? <p className={styles.resultadoTexto}>
                 IMC maior que 30 classfica obessidade. Divide-se em 3 graus
                 <ul className={styles.resultadoList}>
@@ -37,7 +37,7 @@ function Resultado({ imc, resultado }){
                         <p className={styles.resultadoTexto}>Elevado risco de comorbidades graves</p>
                     </li>
                 </ul>
-            </p> : ''}
+            </p> : 'd'}
             
             </div>
         </div>
