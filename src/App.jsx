@@ -19,7 +19,7 @@ function App() {
         return 'Digite seu peso e altura'
     }
     else if(alturaFloat > 1 && pesoFloat >1){
-        return imc
+        return imc.toFixed(2)
     }
     
     
