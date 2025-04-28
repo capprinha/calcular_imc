@@ -31,7 +31,7 @@ function vericarIMC(){
     if(imc <= 18.50){
         return 'Abaixo do peso'
     }
-    else if( imc >= 18.60 && imc <= 24.99){
+    else if( imc >= 18.51 && imc <= 24.99){
         return 'Peso normal'
     }
     else if(imc >= 25.0 && imc <= 29.99){
