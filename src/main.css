@@ -2,14 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--corDeFundo);
     font-family: sans-serif;
     
+}
+.fundo{
+    background-image: linear-gradient(var(--corDeFundo), var(--corDeFundoDois));
+    height: 100vh;
 }
 .container{
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
+
 }
 .logo{
     text-align: center;
@@ -30,21 +34,37 @@
     margin-right: 10px;
 }
 .formInput{
-    font-size: 20px;
+    font-size: 1em;
     font-weight: bold;
     margin-right: 10px;
     text-align: center;
+    outline: none;
     border: none;
     border-bottom: 3px solid var(--corBorda);
-
+}
+.formButton{
+    padding: 8px;
+    border: 3px solid var(--corBorda);
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    background-color: var(--corButton);
+    color: var(--corDeFundo);
+    transition: ease 0.3s;
+}
+.formButton:hover{
+    background-color: var(--corDeFundo);
+    color: var(--corButton);
+    transform: scale(110%);
 }
 
 :root{
     --corDeFundo:#ffeaf2;
+    --corButton:#404040;
     --corBorda:#382f32;
-    --corTexto:#f1396d;
+    --corDeFundoDois:#f1396d;
 }
-@media (max-width:424px){
+@media (max-width:426px){
     .container{
         width: 80%;
     }
@@ -55,10 +75,14 @@
     }
     .formLogo{
         margin-bottom: 10px;
+        margin-right: 0px;
     }
     .formInput{
         margin-right: 0px;
         margin-bottom: 10px;
         width: 80%;
+    }
+    .formButton{
+        margin-left: 0px;
     }
 }

@@ -46,15 +46,15 @@ function vericarIMC(){
     else if(imc >= 40.0){
         return 'Obessidade grau 3'
     }else{
-      return 'Numeros invalidos'
+      return 'Veja seu IMC'
     }
 }
 
   const imc = fazerIMC()
   const resultadoDoIMC = vericarIMC()
   return (
-    <>
-      <h1 className='logo'>Calcular IMC</h1>
+    <body className='fundo'>
+      <h1 className='logo'>Calculadora IMC</h1>
       <div className='form container'>
         <img className='formLogo' src={pesoLogo} alt="Balança" />
         <input className='formInput' type="number" placeholder='Digite seu peso'
@@ -62,9 +62,10 @@ function vericarIMC(){
         <img className='formLogo' src={alturaLogo} alt="Regua" />
         <input className='formInput' type="number" placeholder='Digite sua altura'
         onBlur={evento => setAltura(evento.target.value)} />
+        <button className='formButton'>Calcular</button>
       </div>
       <Resultado imc={imc} resultado={resultadoDoIMC}/>
-    </>
+    </body>
   )
 
   
